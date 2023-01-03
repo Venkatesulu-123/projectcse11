@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+
+   <!--<link rel="stylesheet" href="style.css">-->
+
+</head>
+
+<body>
+
+    <div class="container" >
+
+        <div class="drop">
+
+            <div class="content">
+
+                <h2>Sign in</h2>
+
+                <form name="f1" action=""  method="POST">
+
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="UserId" name="namelogin" required>
+
+                    </div>
+
+                    <div class="inputBox">
+
+                        <input type="password" placeholder="Enter password" name="passwordlogin" required>
+
+                    </div>
+
+                    <div class="inputBox">
+
+                        <input type="submit" 
+
+                        value="Login">
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+        <a href="/register" class="btns">Signup</a>
+        <!--<a href="#" class="btns">Signup</a>-->
+        <a href="/" class="btns signup">Home</a>
+        <!--<a href="/index" class="btns signup">Home</a>-->
+
+        
+
+    </div>
+
+</body>
+
+</html>
