@@ -1,48 +1,145 @@
-.title{
-    background-color: #f6b2c6;
-    width: 100%;
-    height: 150px;
-    text-align: center;
-    padding-top: 20px;
-    color: black;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 60px;
-    background: url("../images/title.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 720px;
-    font-size: 50px;
-    font-family: serif;
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
-.nav{
-    background-color: whitesmoke;
-    height: 50px;
-    padding-top: 20px;
+::selection{
+  color: goldenrod;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: rgb(28, 7, 7);
+  width: 100%;
+  padding: 10px ;
+  z-index: 12;
+}
+nav .menu{
+ font-family: sans-serif;    
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  
+  padding: 0 20px;
+}
+
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 15px;
+}
+.menu ul li:first-child{
+  margin-left: 10px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: rgb(145, 101, 185);
+  color: whitesmoke;
+}
+.img{
+  background: url("../images/title.jpg")no-repeat;
+   
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: rgb(104, 116, 244);
+  color: black;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+}
+.center .btns button:last-child:hover{
+  color: rgb(32, 31, 31);
+   background: rgb(156, 220, 245);
+ 
 }
 
 .abstract{
     margin: 0px 50px 0px 50px;
+    
 }
 p{
     text-align: justify;
-    font-size: 24px;
+    font-size: 30px;
 }
 .imags{
     margin: 0px 50px 0px 50px;
-    width: 1200px;
-    height: 300px;
+    width: 1300px;
+    height: 500px;
 }
 .name{
     float: left;
     width: 600px;
     height: 300px;
+    margin-left: 50px;
 }
 .names{
     float: right;
     width: 600px;
     height: 300px;
+    margin-right: 50px;
 }
-.venky{
+.ven{
     float: left;
     width: 300px;
     height: 300px;
@@ -57,42 +154,12 @@ p{
     width: 300px;
     height: 300px;
 }
-.mukesh{
+.varma{
     float: right;
     width: 300px;
     height: 300px;
 }
-.container{
-    position: relative;
-    width: 100%;
-    
-    
+#h2{
+  margin-left: 40px;
+}
 
-}
-.container ul{
-    
-    top: 0;left: 0;
-    background: #262626 26;
-    width: 100%;height: 60px;
-    z-index: 10;
-    background-color: rgb(164, 84, 84);
-}
-.container ul li{
-    list-style: none;
-    width: calc(100%/4);
-    height: 100%;
-    float: left;
-    
-}
-.container ul li a{
-    display: inline-block;
-    width: 100%;height: 100%;
-    text-align: center;line-height: 60px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    
-}
-.container ul li a:hover{
-    background: #854f4b;
-}

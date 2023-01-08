@@ -1,44 +1,61 @@
-<html>
-    <head>
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-    </head>
-    <body>
-        <div class="title">
-         Heart Disease Prediction Using Machine Learning 
-        </div>
-        <div class="container">
-         <ul>
-        <li> <a href="/">HOME</a></li>
-        <li><a href="/login">LOGIN</a></li>
-          <li><a href="/register">REGISTER</a></li>
-          <li><a href="#yy">TEAM</a></li>
-         </ul>
-       </div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+ </head>
+<body>
+  <nav>
+    <div class="menu">
       
-             <div class="abstract">
-         <h2>ABSTRACT</h2>
-         <p>The Heart is a vital organ in living beings. Millions of deaths occur worldwide due to heart diseases every year. Prediction and diagnosis of the diseases related to the heart require more accuracy, precision, and faultlessness, as the slightest mistake can cause various problems like fatigue and even result in the death of the person. It is an arduous task to predict the disease as it needs expertise and proficiency in the field. In various data repositories, large datasets are available which are used to solve real-world applications. In this paper, we calculate the accuracy of machine learning algorithm for predicting the possibility of heart disease. For this algorithm using logistic regression. We intend to draw out hidden patterns by applying various techniques, which are significant in causing heart disease and to predict its presence. Our objective is to find out a suitable machine learning technique that is computationally efficient as well as accurate for the prediction of heart disease 
-         </p>
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="#ab">ABSTRACT</a></li>
+        <li><a href="#tm">TEAM MEMBERS</a></li>
+        <li><a href="/login">LOGIN</a></li>
+        <li><a href="/register">REGISTER</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Heart Disease Prediction Using<br> Machine Learning</div>
+    <div class="btns">
+      <button onclick="window.location.href='/login';">Login</button>
+      <button onclick="window.location.href='/register';">Register</button>
+    </div>
+  </div>
+   <br>
+  <div class="abstract" id="ab">
+    <br><br><br>
+         <h2><u>ABSTRACT</u></h2>
+          <br><br>
+         <p>The Heart is a vital organ in living beings. Millions of deaths occur worldwide due to heart diseases every year. Prediction and diagnosis of the diseases related to the heart require more accuracy and precision. As the slightest mistake can cause various problems like fatigue and even result in the death of the person. It is an arduous task to predict the disease as it needs expertise and proficiency in the field. In various data repositories, large datasets are available which are used to solve real-world applications. In this paper, we calculate the accuracy of machine learning algorithm for predicting the possibility of heart disease. For this algorithm using logistic regression. We intend to draw out hidden patterns by applying various techniques, which are significant in causing heart disease and to predict its presence. Our objective is to find out a suitable machine learning technique that is computationally efficient as well as accurate for the prediction of heart disease </p>
              </div>
-             <div class="imags" id="yy">
-               <div class="name">
-               <div class="venky"><img src="{{url_for('static',filename='images/05A0.jpg')}}"/>
-            <h3>P.VENKATESULU</h3></div>
-               <div class="sirisha"><img src="{{url_for('static',filename='images/562.jpg')}}"/>
-            <h3>A.SIRISHA</h3></div>
-                
-            </div>
-            <div class="names">
-               <div class="hitesh"><img src="{{url_for('static',filename='images/5A5.jpg')}}"/>
-            <h3>P.HITESH KUMAR</h3></div>
-               <div class="mukesh"><img src="{{url_for('static',filename='images/577.jpeg')}}"/>
-            <h3>G.MUKESH VARMA</h3></div>
-                
-            </div>
-            </div>
-
-    </body>
+             <br>
+             <br>
+             <br>
+             <br><br><br>
+        <div class="imags" id="tm">
+          <h2 style="text-align: center;"><u>TEAM MEMBERS</u></h2><br>
+            
+             <br>
+                <div class="name">
+                <div class="ven"><img src="{{url_for('static',filename='images/05A0.jpg')}}"/>
+             <h4>P.VENKATESULU</h4><br>19MH1A05A0</div>
+                <div class="sirisha"><img src="{{url_for('static',filename='images/562.jpg')}}"/>
+             <h4>A.SIRISHA</h4><br>19MH1A0562</div>
+                 
+             </div>
+             <div class="names">
+                <div class="hitesh"><img src="{{url_for('static',filename='images/5A5.jpg')}}"/>
+             <h4>P.HITESH KUMAR</h4><br>19MH1A05A5</div>
+                <div class="varma"><img src="{{url_for('static',filename='images/577.jpeg')}}"/>
+             <h4>G.MUKESH VARMA</h4><br>19MH1A0577</div>
+                 
+             </div>
+          </div>
+</body>
 </html>
+

@@ -13,21 +13,37 @@
       <div><br>
         <h1>Sign up</h1>
         <br>
-        <form name="f1" action="" method="POST">
-        <input type="text" placeholder="Enter Name" name="name" required>
+        <form name="f1" action="" method="POST" onsubmit="return verifyPassword()">
+        <input type="text" placeholder="Enter Name" pattern="[a-zA-Z\s]*" title="Name should be alphabetic " name="name" required>
         <br><br>
         <input type="text" placeholder="Enter Username" name="username" required>
         <br><br>
-        <input type="email" placeholder="Enter Email" name="email" required>
+        <input type="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@gmail.com" title="enter valid email id" name="email" required >
         <br><br>
-        <input type="password" placeholder="Enter Password" name="password" required>
+        <input type="password" placeholder="Enter Password" id="psw" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title="password must contain atleast one number one uppercase and lowercase letter one symbol and must contain atleast 8 or more characters " name="password" required>
         <br><br>
-        <input type="password" placeholder="Confirm Password" name="confirmpassword" required>
+        <input type="password" placeholder="Confirm Password" id="cpsw" onkeypress="pass()"  name="confirmpassword" required>
         <br><br>
-       
+        <p id="mess" style="color: red; text-align: center; font-size: 20px; display: none;">Password not matched</p><br/>
         <button>Register</button>
         </form>
         <h5 style="margin-left: 120px;">Already have an account?<a href="/login">login</a></h5>
     </div><br><br><br><br><br>
+    <script>
+        function verifyPassword() {  
+              var pw = document.getElementById("psw").value;
+            var cpw = document.getElementById("cpsw").value; 
+              if(pw == cpw) {  
+                  // alert("Register Success"); 
+              }  
+            else{
+            document.getElementById("mess").style.display="block"; 
+                   return false; 
+            }
+        }
+function pass(){
+    document.getElementById("mess").style.display="none";
+}
+</script>
 	</body>
 </html>
